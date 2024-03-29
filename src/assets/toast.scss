@@ -1,0 +1,33 @@
+.toast {
+	min-height: auto;
+
+	padding: 12px 16px;
+
+	border-radius: 8px;
+
+	&__container {
+		padding: 0 8px;
+		padding-bottom: 86px;
+
+		@media screen and (min-width: 768px) {
+			padding: 0;
+		}
+	}
+
+	&.Vue-Toastification__toast--default {
+		background: var(--color-primary);
+		color: var(--color-primary-text);
+	}
+	&.Vue-Toastification__toast--warning {
+		background: var(--color-warn);
+		color: var(--color-warn-text);
+	}
+	&.Vue-Toastification__toast--info {
+		background: var(--color-info);
+		color: var(--color-info-text);
+	}
+	&.Vue-Toastification__toast--error {
+		background: var(--color-danger);
+		color: var(--color-danger-text);
+	}
+}
